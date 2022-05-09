@@ -17,9 +17,9 @@ const MainPage =() =>{
                     <Route path ="/items/create" element={<CreateItems></CreateItems>}></Route>
                     <Route path ="/brands/create" element={<AddBrand></AddBrand>}></Route>
                     <Route path="/brands" element={<BrandList></BrandList>}></Route>
-                    {/* <Route path ="/items/edit">
+                    <Route path ="/items/edit">
                         <Route path="/:id" element={<UpdateItem></UpdateItem>}></Route>
-                    </Route> */}
+                    </Route>
                 </Routes>
             </div>
         </>
