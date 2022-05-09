@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 const Footer = () =>{
     return (
         <>
-        <div class ="container footer-page">
+        <div className ="container footer-page">
             <h7>Copyright 2022</h7>
         </div>
         </>

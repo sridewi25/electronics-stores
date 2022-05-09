@@ -53,7 +53,7 @@
   background-color: #3F418B;
   color: white;
 }
-.text-add{
+.submit-btn button{
   box-sizing: border-box;
   background-color:#3F418B ;
   border: 3px solid #3F418B; 
@@ -64,6 +64,11 @@
   height: 40px;
 }
 
+.submit-btn{
+  text-align: center;
+  padding-top:10px;
+  padding-bottom: 20px;
+}
 
 
 

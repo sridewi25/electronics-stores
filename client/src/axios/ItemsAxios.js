@@ -1,15 +1,15 @@
 import axios from 'axios'
 import Swal from 'sweetalert2'
 
-const URL = 'http://localhost:3000'
+const URL = 'http://localhost:3000/api/items'
 
-const getAllItem = async (result) => {
+const getAllItem = async (cb) => {
     try {
         let items = await axios({
             method: 'GET',
             url: URL 
         })
-        result(items.data)
+        cb(items.data)
     } catch (error) {
         console.log(error)
     }
@@ -19,7 +19,7 @@ const createItem = async (resultItem) => {
     try {
         let items = await axios({
             method: 'POST',
-            url: URL + "/items/create",
+            url: URL + "/create",
             data: resultItem
         })
 
@@ -34,11 +34,11 @@ const createItem = async (resultItem) => {
     }
 }
 
-const editItem = async (id, item) => {
+const updateItem = async (id, item) => {
     try {
         let result = await axios({
-            method: 'PUT',
-            url: URL + '/items/edit/' + id,
+            method: 'UPDATE',
+            url: URL + '/update/' + id,
             data: item
         })
         Swal.fire(
@@ -65,8 +65,8 @@ const deleteItem = async (id) => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 let result = await axios({
-                    method: "DELETE",
-                    url: URL + '/items/delete/' + id
+                    method: 'DELETE',
+                    url: URL + '/delete/' + id
                 })
 
                 Swal.fire(
@@ -81,9 +81,4 @@ const deleteItem = async (id) => {
         console.log(error)
     }
 }
-export {
-    getAllItem,
-    createItem,
-    editItem,
-    deleteItem
-}
+export {getAllItem,createItem,updateItem,deleteItem}

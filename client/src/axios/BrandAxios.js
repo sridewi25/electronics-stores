@@ -1,7 +1,7 @@
 import axios from 'axios'
 import Swal from 'sweetalert2'
 
-const URL = 'http://localhost:3000/brands'
+const URL = 'http://localhost:3000/api/brands'
 
 const getAllBrand = async (result) => {
     try {
@@ -34,7 +34,4 @@ const createBrand = async (resultBrand) => {
     }
 }
 
-export {
-    getAllBrand,
-    createBrand
-}
+export {getAllBrand,createBrand}

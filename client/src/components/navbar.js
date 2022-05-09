@@ -7,16 +7,16 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <>
-    <div class="container header-title">
-      <div class="row ">
-        <div class="col">
+    <div className="container header-title">
+      <div className="row ">
+        <div className="col">
           <img src={logo} alt=""/>
         </div>
-      <div class="col">
-        <ul class=" row header-menu">
-          <li class="col"><Link to="/items/create">Add Item</Link></li>
-          <li class="col"><Link to="/brands">Brand List</Link></li>
-          <li class="col"><Link to="/brands/create">Add Brand</Link></li>
+      <div className="col">
+        <ul className=" row header-menu">
+          <li className="col"><Link to="/items/create">Add Item</Link></li>
+          <li className="col"><Link to="/brands">Brand List</Link></li>
+          <li className="col"><Link to="/brands/create">Add Brand</Link></li>
         </ul>
       </div>
       </div>

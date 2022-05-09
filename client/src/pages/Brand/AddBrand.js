@@ -16,17 +16,15 @@ const AddBrand = () =>{
       }
     return (
         <>
-        <div class ="container">
-        <div class="mb-3">
-              <label class="form-label">Name</label>
+        
+        <div className="mb-3">
+              <label className="form-label">Brand Name</label>
               <input onChange={(item) => setForm({ ...form, name: item.target.value })}
               type="text" className="form-control"></input> 
             </div>
-            <div class="submit-btn">
-            <button onClick={() => submitHandler()} className="btn text-add">Submit</button>
+            <div className="submit-btn">
+            <button onClick={() => submitHandler()} classNameName="btn text-add">Submit</button>
             </div>
-        </div>
-          
         </>
     )
 }
