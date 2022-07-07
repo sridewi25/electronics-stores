@@ -1,8 +1,4 @@
 # electronics-stores
 
-npx sequelize-cli model:generate --name user --attributes name:string
-
-npx sequelize-cli model:generate --name brand --attributes name:string
-
-npx sequelize-cli model:generate --name item --attributes name:string,price:string,category:string,image:string,userId:integer,brandId:integer
+Electronic Stores merupakan aplikasi berbasis website yang dapat digunakan untuk memberikan informasi mengenai barang-barang elektronik yang dijual pada toko tersebut. Sistem ini menggunakan Node JS, Express JS, Sequelize, React JS, React Hooks, React Router, Axios, CSS, dan Bootstrap 5.0 yang terintegrasi dengan PostgreSQL database.
 
